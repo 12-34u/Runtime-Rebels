@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "q1",
+      "query": "Find mentions of international bank transfers or crypto wallets",
+      "timestamp": "2025-01-15T14:32:00Z",
+      "resultCount": 7
+    }
+  ],
+  "results": [
+    {
+      "id": "r1",
+      "source": "WhatsApp",
+      "sender": "Ravi Kumar (+91-98765-43210)",
+      "receiver": "Unknown (+971-55-1234567)",
+      "timestamp": "2024-12-10T03:14:22Z",
+      "content": "Bhai paisa bhej diya hai USDT mein. Wallet check kar — 0x7a3B…f9c1. 50k done.",
+      "language": "Hindi/English",
+      "relevanceScore": 0.96,
+      "flaggedEntities": ["USDT", "Crypto Wallet: 0x7a3B…f9c1", "Amount: 50,000"],
+      "riskLevel": "critical"
+    },
+    {
+      "id": "r2",
+      "source": "Telegram",
+      "sender": "Dark_Phoenix_99",
+      "receiver": "Channel: CryptoDrops",
+      "timestamp": "2024-12-11T22:45:10Z",
+      "content": "Wire transfer cleared through HSBC Dubai branch. Ref #HK-2847591. Route the funds via the usual shell.",
+      "language": "English",
+      "relevanceScore": 0.93,
+      "flaggedEntities": ["HSBC Dubai", "Ref: HK-2847591", "Shell Company"],
+      "riskLevel": "critical"
+    },
+    {
+      "id": "r3",
+      "source": "SMS",
+      "sender": "+91-87654-32100",
+      "receiver": "Ravi Kumar (+91-98765-43210)",
+      "timestamp": "2024-12-09T11:20:33Z",
+      "content": "Account credited INR 4,99,999. TXN ID: SWIFT/MUM/291847. Remaining balance forwarded to BC1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+      "language": "English",
+      "relevanceScore": 0.91,
+      "flaggedEntities": ["SWIFT Transfer", "Bitcoin Address: BC1q…wlh", "Amount: 4,99,999 INR"],
+      "riskLevel": "high"
+    },
+    {
+      "id": "r4",
+      "source": "WhatsApp",
+      "sender": "Priya M (+91-99887-76655)",
+      "receiver": "Ravi Kumar (+91-98765-43210)",
+      "timestamp": "2024-12-12T16:08:44Z",
+      "content": "Cash pickup done at Andheri. Converted to Tether and sent to the cold wallet. Confirmation pending from the other side.",
+      "language": "English",
+      "relevanceScore": 0.88,
+      "flaggedEntities": ["Tether/USDT", "Cold Wallet", "Cash Pickup: Andheri"],
+      "riskLevel": "high"
+    },
+    {
+      "id": "r5",
+      "source": "Signal",
+      "sender": "Ghost_Handler",
+      "receiver": "Ravi Kumar",
+      "timestamp": "2024-12-08T01:33:15Z",
+      "content": "Hawala channel is compromised. Switch to Binance P2P. Use the new burner for OTP.",
+      "language": "English",
+      "relevanceScore": 0.85,
+      "flaggedEntities": ["Hawala", "Binance P2P", "Burner Phone"],
+      "riskLevel": "critical"
+    },
+    {
+      "id": "r6",
+      "source": "WhatsApp",
+      "sender": "Unknown (+44-7911-123456)",
+      "receiver": "Dark_Phoenix_99",
+      "timestamp": "2024-12-13T09:15:00Z",
+      "content": "Funds are in the escrow. Release once you confirm the shipment has cleared customs in Mumbai port.",
+      "language": "English",
+      "relevanceScore": 0.82,
+      "flaggedEntities": ["Escrow", "Customs: Mumbai Port", "UK Number"],
+      "riskLevel": "medium"
+    },
+    {
+      "id": "r7",
+      "source": "Telegram",
+      "sender": "Ravi Kumar",
+      "receiver": "Private Group: Business_OPs",
+      "timestamp": "2024-12-14T20:50:30Z",
+      "content": "Sab set hai. Maal ka paisa BTC mein convert karo aur Dubai wale ko bhejo. No traces.",
+      "language": "Hindi",
+      "relevanceScore": 0.79,
+      "flaggedEntities": ["BTC Conversion", "Dubai Transfer", "Anti-Forensic Intent"],
+      "riskLevel": "critical"
+    }
+  ]
+}

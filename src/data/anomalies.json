@@ -1,0 +1,167 @@
+{
+  "baseline": {
+    "activeHours": "9:00 AM — 10:30 PM",
+    "primaryLanguage": "Hindi / English",
+    "avgDailyMessages": 47,
+    "typicalContacts": 12,
+    "avgMediaPerDay": 3
+  },
+  "anomalies": [
+    {
+      "id": "a1",
+      "category": "temporal",
+      "severity": "critical",
+      "title": "Unprecedented Late-Night Activity",
+      "finding": "Subject was active between 1:00 AM — 4:30 AM on Dec 10, 2024. During this window, 14 messages were sent including a confirmation of a 50,000 USDT cryptocurrency transfer to an unidentified wallet address.",
+      "whySuspicious": "In the last 183 days, the subject has never been active between 1:00 AM and 4:00 AM. This sudden break in sleep pattern coincides exactly with a large crypto transaction — suggesting the subject deliberately chose an unusual hour to avoid detection or oversight.",
+      "nextSteps": [
+        "Obtain full USDT wallet transaction history to trace where the 50K was sent",
+        "Cross-reference the recipient wallet address with known fraud/money-laundering databases",
+        "Check if any other contacts were active during the same 1-4 AM window on Dec 10",
+        "Request CDR (Call Detail Records) for this time window to check for voice calls"
+      ],
+      "timestamp": "2024-12-10T01:00:00Z",
+      "evidence": ["WhatsApp Chat #2288-2302", "Device Usage Log"],
+      "baselineDeviation": "First 1-4 AM activity in 183 days",
+      "relatedEvents": ["e5"]
+    },
+    {
+      "id": "a2",
+      "category": "linguistic",
+      "severity": "high",
+      "title": "Sudden Language & Code Switch",
+      "finding": "Starting Dec 7, the subject abruptly stopped using casual Marathi/Hindi and switched to heavily coded English slang. New terms appeared for the first time: 'cold wallet,' 'drop,' 'clean route,' 'the package,' 'greenlight,' and 7 others — all within a 7-day window.",
+      "whySuspicious": "In the previous 90 days, zero coded terms were used. The sudden introduction of 12 coded terms in just 7 days strongly indicates the subject was coached or inducted into a criminal operation that uses specific jargon to avoid detection by surveillance systems.",
+      "nextSteps": [
+        "Run all 12 coded terms against the Inter-Agency Criminal Slang Database for matches",
+        "Identify which contact introduced these terms first — check message timestamps",
+        "Compare coded terms with vocabulary used in linked Cases #MH/2024/4421 and #DL/2024/891",
+        "Flag these terms for real-time monitoring on all subject communication channels"
+      ],
+      "timestamp": "2024-12-07T09:30:00Z",
+      "evidence": ["Signal Messages Dec 7-14", "WhatsApp Chats Dec 7-14"],
+      "baselineDeviation": "12 new coded terms introduced in 7 days (vs 0 in prior 90 days)",
+      "relatedEvents": ["e2"]
+    },
+    {
+      "id": "a3",
+      "category": "data",
+      "severity": "critical",
+      "title": "Massive Selective File Deletion",
+      "finding": "Exactly 5 minutes after the reported incident time on Dec 14, 4.2 GB of video files (137 files) were bulk-deleted from the device. The deletion was highly targeted — only .mp4 and .mov video files were removed while all photos, documents, and audio files were left untouched.",
+      "whySuspicious": "The timing (5 minutes post-incident) and selectivity (only videos) strongly indicate deliberate evidence destruction. A normal cleanup would not target only video files. Videos likely contained visual evidence of the crime — meetings, transactions, or locations that could identify accomplices.",
+      "nextSteps": [
+        "Attempt forensic recovery of deleted .mp4 and .mov files using specialized tools",
+        "Analyze file metadata of recovered videos — check creation dates, GPS tags, and camera info",
+        "Check if any of the 137 deleted files were shared via WhatsApp/Signal before deletion",
+        "Examine cloud backup services (Google Photos, iCloud) for synced copies of deleted videos",
+        "Document the exact 5-minute gap as evidence of consciousness of guilt"
+      ],
+      "timestamp": "2024-12-14T21:05:00Z",
+      "evidence": ["File System Log", "Deleted File Recovery Report"],
+      "baselineDeviation": "Largest single deletion event; 98% of total storage freed",
+      "relatedEvents": ["e9"]
+    },
+    {
+      "id": "a4",
+      "category": "network",
+      "severity": "high",
+      "title": "Cross-Case Contact Detected",
+      "finding": "The burner number +91-87654-32100 used by the subject has been flagged in 3 other active investigations: Case #MH/2024/4421 (Drug Trafficking in Maharashtra), Case #DL/2024/891 (Money Laundering in Delhi), and Case #GJ/2024/2103 (Arms Supply in Gujarat).",
+      "whySuspicious": "A single phone number appearing in 4 separate criminal investigations across 3 different states is an extremely strong indicator of organized crime. The subject is likely connected to a multi-state criminal network operating across drug trafficking, money laundering, and arms supply chains.",
+      "nextSteps": [
+        "Coordinate with investigating officers of all 3 linked cases for intelligence sharing",
+        "Request complete call/SMS history of the burner number from the telecom provider",
+        "Map the full contact network of this burner number to identify the central handler",
+        "Check if the burner was purchased with fake ID — trace the SIM registration details",
+        "File for inter-state investigation coordination under NIA protocols"
+      ],
+      "timestamp": "2024-12-08T16:45:00Z",
+      "evidence": ["Inter-Agency Database Match", "Call Records"],
+      "baselineDeviation": "Contact appears in 3 separate investigations across 3 states",
+      "relatedEvents": ["e3"]
+    },
+    {
+      "id": "a5",
+      "category": "temporal",
+      "severity": "medium",
+      "title": "Communication Blackout Period",
+      "finding": "On Dec 12, the subject's device was completely inactive for 6 hours straight (10:00 AM — 4:00 PM). For someone who averages 47 messages per day, this total silence is unprecedented. Activity resumed at exactly 4:01 PM — the precise moment contact 'Priya' confirmed a cash pickup.",
+      "whySuspicious": "The blackout likely indicates the subject was involved in an in-person activity they didn't want digitally recorded — possibly a face-to-face meeting, cash exchange, or evidence handling. The perfect timing of resumption with the cash pickup confirmation suggests coordination.",
+      "nextSteps": [
+        "Check CCTV footage near subject's known locations during the 10 AM - 4 PM window",
+        "Analyze cell tower data to determine the subject's physical location during blackout",
+        "Interview 'Priya' to determine the nature and amount of the cash pickup",
+        "Check if other suspects in linked cases also went silent during the same window"
+      ],
+      "timestamp": "2024-12-12T10:00:00Z",
+      "evidence": ["Device Usage Log", "WhatsApp Read Receipts"],
+      "baselineDeviation": "Longest inactivity period in 45 days",
+      "relatedEvents": ["e7"]
+    },
+    {
+      "id": "a6",
+      "category": "data",
+      "severity": "medium",
+      "title": "VPN & Encrypted App Spike",
+      "finding": "On Dec 6 at 6:30 PM, the subject installed Signal, ProtonMail, and NordVPN all within a 20-minute window. Before this date, the subject had zero encrypted communication apps or VPN services on their device.",
+      "whySuspicious": "Installing three privacy/encryption tools simultaneously — and for the first time ever — indicates the subject was specifically preparing to hide their communications. This happened one day before the coded language started appearing, suggesting someone instructed them to secure their channels before the operation began.",
+      "nextSteps": [
+        "Check if any contact sent instructions to install these apps (search WhatsApp for 'Signal', 'VPN', 'ProtonMail')",
+        "Attempt to obtain Signal message history through device forensics",
+        "Request ProtonMail account details via legal channels if jurisdiction allows",
+        "Check NordVPN connection logs to identify what services were accessed through VPN",
+        "Note: This app installation timeline is key evidence of premeditation"
+      ],
+      "timestamp": "2024-12-06T18:30:00Z",
+      "evidence": ["App Install Log", "Google Play Store Activity"],
+      "baselineDeviation": "3 security apps installed simultaneously (0 prior)",
+      "relatedEvents": []
+    },
+    {
+      "id": "a7",
+      "category": "network",
+      "severity": "medium",
+      "title": "New International Contact Cluster",
+      "finding": "Within a 48-hour window starting Dec 7, the subject added 4 new international contacts from UAE, UK, Singapore, and Thailand. In the previous 12 months, the subject had exactly zero international contacts.",
+      "whySuspicious": "Going from zero to four international contacts in 48 hours — spanning 4 countries known for financial routing — strongly suggests the subject was being connected to an international money movement network. These countries are commonly used as waypoints in layered money laundering schemes.",
+      "nextSteps": [
+        "Identify and profile all 4 international contacts — check against INTERPOL and national watchlists",
+        "Analyze message content with each international contact for transaction-related keywords",
+        "Check if any of these numbers appear in hawala or money transfer investigation databases",
+        "Request mutual legal assistance (MLAT) for phone records in UAE and Singapore",
+        "Map the geographic spread to identify potential money laundering route"
+      ],
+      "timestamp": "2024-12-07T00:00:00Z",
+      "evidence": ["Contact List Analysis", "Call/Message Logs"],
+      "baselineDeviation": "4 international contacts added (baseline: 0)",
+      "relatedEvents": ["e2", "e3"]
+    },
+    {
+      "id": "a8",
+      "category": "linguistic",
+      "severity": "low",
+      "title": "Unusual Emoji Pattern",
+      "finding": "The subject started using the emoji sequence 🏦💰🔒 repeatedly in messages to the contact 'Dark_Phoenix_99'. This specific three-emoji pattern has been identified in Case #MH/2024/4421 as a coded signal meaning 'bank deposit secured and locked.'",
+      "whySuspicious": "The use of an identical emoji code that is already documented in another active criminal case suggests the subject and Dark_Phoenix_99 are either part of the same network or have been trained by the same handler. Emoji codes are increasingly used by criminal networks to bypass keyword-based surveillance.",
+      "nextSteps": [
+        "Document all instances of this emoji pattern with exact timestamps and context",
+        "Cross-reference Dark_Phoenix_99's identity with suspects in Case #MH/2024/4421",
+        "Check if other emoji sequences are being used as codes — analyze all emoji usage patterns",
+        "Add this emoji pattern to the real-time surveillance keyword/pattern list"
+      ],
+      "timestamp": "2024-12-09T14:00:00Z",
+      "evidence": ["Message Content Analysis", "Cross-Case Pattern DB"],
+      "baselineDeviation": "New emoji pattern matching known criminal code",
+      "relatedEvents": []
+    }
+  ],
+  "riskSummary": {
+    "overallRisk": 87,
+    "critical": 2,
+    "high": 3,
+    "medium": 3,
+    "low": 1,
+    "recommendation": "Immediate escalation recommended. Subject displays coordinated anti-forensic behavior with strong indicators of premeditated financial crime across international jurisdictions."
+  }
+}

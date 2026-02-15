@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    { "id": "n1", "label": "Ravi Kumar", "type": "suspect", "phone": "+91-98765-43210", "messageCount": 342, "riskScore": 92, "x": 400, "y": 250 },
+    { "id": "n2", "label": "Dark_Phoenix_99", "type": "suspect", "phone": "Unknown", "messageCount": 187, "riskScore": 88, "x": 650, "y": 150 },
+    { "id": "n3", "label": "Priya M", "type": "associate", "phone": "+91-99887-76655", "messageCount": 95, "riskScore": 65, "x": 200, "y": 150 },
+    { "id": "n4", "label": "Ghost_Handler", "type": "suspect", "phone": "Burner", "messageCount": 23, "riskScore": 95, "x": 400, "y": 50 },
+    { "id": "n5", "label": "+971-55-1234567", "type": "foreign", "phone": "+971-55-1234567", "messageCount": 41, "riskScore": 78, "x": 650, "y": 350 },
+    { "id": "n6", "label": "+44-7911-123456", "type": "foreign", "phone": "+44-7911-123456", "messageCount": 12, "riskScore": 55, "x": 200, "y": 380 },
+    { "id": "n7", "label": "UPI: merchant@axis", "type": "financial", "phone": "N/A", "messageCount": 0, "riskScore": 45, "x": 100, "y": 250 },
+    { "id": "n8", "label": "HSBC Dubai Branch", "type": "financial", "phone": "N/A", "messageCount": 0, "riskScore": 70, "x": 700, "y": 250 },
+    { "id": "n9", "label": "+91-87654-32100", "type": "hidden_link", "phone": "+91-87654-32100", "messageCount": 67, "riskScore": 82, "x": 400, "y": 420 },
+    { "id": "n10", "label": "Binance P2P Account", "type": "financial", "phone": "N/A", "messageCount": 0, "riskScore": 60, "x": 550, "y": 50 }
+  ],
+  "edges": [
+    { "source": "n1", "target": "n2", "weight": 45, "type": "frequent", "label": "45 msgs" },
+    { "source": "n1", "target": "n3", "weight": 28, "type": "frequent", "label": "28 msgs" },
+    { "source": "n1", "target": "n4", "weight": 8, "type": "suspicious", "label": "8 msgs (encrypted)" },
+    { "source": "n1", "target": "n5", "weight": 15, "type": "international", "label": "15 msgs" },
+    { "source": "n1", "target": "n7", "weight": 3, "type": "financial", "label": "3 txns" },
+    { "source": "n1", "target": "n9", "weight": 22, "type": "hidden", "label": "22 msgs" },
+    { "source": "n2", "target": "n5", "weight": 10, "type": "international", "label": "10 msgs" },
+    { "source": "n2", "target": "n6", "weight": 5, "type": "international", "label": "5 msgs" },
+    { "source": "n2", "target": "n8", "weight": 2, "type": "financial", "label": "2 txns" },
+    { "source": "n2", "target": "n9", "weight": 14, "type": "hidden", "label": "14 msgs" },
+    { "source": "n2", "target": "n10", "weight": 6, "type": "financial", "label": "6 txns" },
+    { "source": "n3", "target": "n9", "weight": 8, "type": "hidden", "label": "8 msgs" },
+    { "source": "n4", "target": "n10", "weight": 3, "type": "suspicious", "label": "3 msgs" },
+    { "source": "n6", "target": "n8", "weight": 1, "type": "financial", "label": "1 txn" }
+  ]
+}

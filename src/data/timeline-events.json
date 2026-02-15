@@ -1,0 +1,150 @@
+{
+  "storylines": [
+    {
+      "id": "storyline-a",
+      "title": "Storyline A: Premeditated Financial Network",
+      "confidence": 87,
+      "description": "Evidence suggests a well-organized, pre-planned financial laundering operation spanning 3 countries with at least 5 key participants."
+    },
+    {
+      "id": "storyline-b",
+      "title": "Storyline B: Opportunistic Drug Trade Laundering",
+      "confidence": 62,
+      "description": "Evidence alternatively suggests the financial transactions are tied to an opportunistic drug trade operation initiated after a chance meeting."
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-05T14:00:00Z",
+      "title": "Initial Planning Meeting",
+      "description": "GPS data places Ravi Kumar and Priya M at Hotel Grand Hyatt, Mumbai for 2.5 hours. 14 WhatsApp messages exchanged during this window.",
+      "type": "meeting",
+      "source": "GPS + WhatsApp",
+      "sourceRef": "Device 1 — Location History + Chat Export",
+      "participants": ["Ravi Kumar", "Priya M"],
+      "importance": "high"
+    },
+    {
+      "id": "e2",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-07T09:30:00Z",
+      "title": "Hawala Network Compromised",
+      "description": "Ghost_Handler sends encrypted Signal message warning Ravi that their hawala channel has been compromised. Instructs switch to Binance P2P.",
+      "type": "communication",
+      "source": "Signal",
+      "sourceRef": "Device 1 — Signal Message #4471",
+      "participants": ["Ghost_Handler", "Ravi Kumar"],
+      "importance": "critical"
+    },
+    {
+      "id": "e3",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-08T16:45:00Z",
+      "title": "New Burner Phone Activated",
+      "description": "Call log shows Ravi activated a new SIM card (+91-87654-32100). First outgoing call to +971-55-1234567 (Dubai).",
+      "type": "device",
+      "source": "Call Log",
+      "sourceRef": "Device 2 — Call Record #1",
+      "participants": ["Ravi Kumar", "+971-55-1234567"],
+      "importance": "high"
+    },
+    {
+      "id": "e4",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-09T11:20:00Z",
+      "title": "SWIFT Transfer Received",
+      "description": "SMS confirms INR 4,99,999 credited via SWIFT transfer. Remaining balance forwarded to Bitcoin address BC1q…wlh.",
+      "type": "financial",
+      "source": "SMS",
+      "sourceRef": "Device 1 — SMS #892",
+      "participants": ["Ravi Kumar"],
+      "importance": "critical"
+    },
+    {
+      "id": "e5",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-10T03:14:00Z",
+      "title": "USDT Transfer to Dubai",
+      "description": "Late-night message confirms 50K USDT sent to crypto wallet 0x7a3B…f9c1 linked to Dubai contact.",
+      "type": "financial",
+      "source": "WhatsApp",
+      "sourceRef": "Device 1 — WhatsApp Chat #2291",
+      "participants": ["Ravi Kumar", "+971-55-1234567"],
+      "importance": "critical"
+    },
+    {
+      "id": "e6",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-11T22:45:00Z",
+      "title": "Wire Transfer via HSBC Dubai",
+      "description": "Dark_Phoenix_99 confirms wire transfer cleared through HSBC Dubai. References a shell company for routing funds.",
+      "type": "financial",
+      "source": "Telegram",
+      "sourceRef": "Device 3 — Telegram Message #184",
+      "participants": ["Dark_Phoenix_99"],
+      "importance": "critical"
+    },
+    {
+      "id": "e7",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-12T16:08:00Z",
+      "title": "Cash Pickup & Crypto Conversion",
+      "description": "Priya confirms physical cash collected at Andheri, converted to Tether (USDT), and sent to cold storage wallet.",
+      "type": "financial",
+      "source": "WhatsApp",
+      "sourceRef": "Device 1 — WhatsApp Chat #2305",
+      "participants": ["Priya M", "Ravi Kumar"],
+      "importance": "high"
+    },
+    {
+      "id": "e8",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-13T09:15:00Z",
+      "title": "Escrow & Customs Clearance",
+      "description": "UK number confirms funds in escrow, pending customs clearance of shipment at Mumbai port.",
+      "type": "communication",
+      "source": "WhatsApp",
+      "sourceRef": "Device 3 — WhatsApp Chat #512",
+      "participants": ["+44-7911-123456", "Dark_Phoenix_99"],
+      "importance": "high"
+    },
+    {
+      "id": "e9",
+      "storyline": "storyline-a",
+      "timestamp": "2024-12-14T20:50:00Z",
+      "title": "Final BTC Conversion Order",
+      "description": "Ravi orders group to convert all proceeds to BTC and forward to Dubai contact. Explicitly states 'No traces.'",
+      "type": "communication",
+      "source": "Telegram",
+      "sourceRef": "Device 1 — Telegram Group Message #47",
+      "participants": ["Ravi Kumar"],
+      "importance": "critical"
+    },
+    {
+      "id": "e10",
+      "storyline": "storyline-b",
+      "timestamp": "2024-12-08T23:00:00Z",
+      "title": "Chance Encounter at Club",
+      "description": "Gallery photos place Ravi and Dark_Phoenix_99 at Trilogy nightclub, Mumbai. First known physical meeting.",
+      "type": "meeting",
+      "source": "Photo EXIF + Gallery",
+      "sourceRef": "Device 1 — Gallery IMG_4419.jpg",
+      "participants": ["Ravi Kumar", "Dark_Phoenix_99"],
+      "importance": "medium"
+    },
+    {
+      "id": "e11",
+      "storyline": "storyline-b",
+      "timestamp": "2024-12-09T02:30:00Z",
+      "title": "Spontaneous Deal Discussion",
+      "description": "Rapid burst of 23 messages between Ravi and Dark_Phoenix_99 immediately after nightclub visit suggests unplanned deal.",
+      "type": "communication",
+      "source": "WhatsApp",
+      "sourceRef": "Device 1 — WhatsApp Chat #2280-2303",
+      "participants": ["Ravi Kumar", "Dark_Phoenix_99"],
+      "importance": "high"
+    }
+  ]
+}
